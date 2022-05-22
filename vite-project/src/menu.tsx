@@ -11,6 +11,7 @@ import menu6 from "./assets/image/menu6.jpg";
 
 import { CreateCardMenu } from "./createCardMenu";
 import './menu'
+import { Button } from "./button";
 
 
 export interface ICardMenuProps {
@@ -62,14 +63,26 @@ export function Menu() {
   return (
     <div className="menu">
       <div className="menu_wrapper">
-        <div className="menu-title">Browse our menu</div>
-        <div className="menu__content">
+        <div className="menu_content">
+          <div className="menu-content-title">Browse our menu</div>
+          <div className="menu-content-subtitle">Use our menu to place an order online, or phone our store to place a pickup order. Fast and fresh food.</div>
+          <div className="menu_menu">
+            <div className="menu-buttons">
+            <Button ownwidth={'147px'} buttonContent={'Burgers'} ownheight={'52px'}/>
+            <Button ownwidth={'147px'} buttonContent={'Sides'} ownheight={'52px'}/>
+            <Button ownwidth={'147px'} buttonContent={'Drinks'} ownheight={'52px'}/>
+            </div>
+          <div className="menu__content">
           {" "}
           {menu.map((item) => (
             <CreateCardMenu {...item} />
           ))}
         </div>
+        
+        </div>
+        <div className="button-menu"><Button ownwidth={'186px'} buttonContent={'See Full Menu'} ownheight={'60px'}/></div>
+       </div>
       </div>
-    </div>
+     </div>
   );
 }

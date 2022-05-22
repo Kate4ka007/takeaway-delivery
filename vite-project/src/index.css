@@ -18,7 +18,7 @@ code {
   display: block;
   color: white;
   background-color: #35b8be;
-  border-radius: 10px;
+  border-radius: 6px;
   border: none;
   width: 193px;
   height: 60px;
@@ -29,7 +29,7 @@ code {
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   transition: 0.3s;
 }
 .button:hover {
@@ -48,4 +48,5 @@ code {
   text-align: center;
   letter-spacing: 0.36px;
   color: #000000;
+  margin-bottom: 0;
 }
