@@ -1,0 +1,16 @@
+.cardMenu {
+  width: 580px;
+  height: 200px;
+  transition: .3s;
+  display: flex;
+}
+.cardMenu:hover {
+transform: scale(1.05);
+transition: .3s;
+}
+
+
+.cardMenu-img {
+  width: 120px;
+  height: 120px;
+}

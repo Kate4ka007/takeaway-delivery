@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+  box-sizing: border-box;
+}
+.product {
+  width: 100%;
+  height: 820px;
+  background-color: white;
+}
+.product_wrapper {
+  width: 100%;
+  height: 820px;
+  background-image: url(./assets/image/bg-product.png);
+  background-position: 0 0;
+  padding: 140px 147px 140px 120px;
+}
+.product__content {
+  width: 1200px;
+  height: 580px;
+  display: flex;
+}
+.content-prod {
+  width: 578px;
+  height: 614px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./assets/image/prod-cont-bg.png);
+  background-size: cover;
+}
+.title-prod {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 55px;
+  letter-spacing: 1.65px;
+  color: #35b8be;
+  margin-bottom: 29px;
+  width: 380px;
+}
+.sub-title-prod {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  color: #546285;
+  width: 539px;
+  display: block;
+  margin-bottom: 47px;
+}
+.product__image {
+  width: 600px;
+  height: auto;
+  transition: .5s;
+}
+.product__image:hover {
+transform: scale(1.1);
+transition: .5s;
+filter: saturate(150%);
+}
+.blue {
+  color: #35b8be;
+}
